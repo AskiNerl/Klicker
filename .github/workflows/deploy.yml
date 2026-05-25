@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# Вот эту штуку добавь:
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,7 +19,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '20' # Это можно оставить, GitHub сам подхватит настройки из env выше
 
       - name: Install and Build
         run: |
