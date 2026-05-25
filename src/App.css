@@ -165,7 +165,7 @@ h1 {
 .throw-btn {
   touch-action: manipulation; 
   user-select: none; 
-  -webkit-tap-highlight-color: transparent; /
+  -webkit-tap-highlight-color: transparent; 
 }
 
 
